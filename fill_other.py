@@ -22,7 +22,7 @@ def fill_building_number(row):
     s = list()
     num = ""
     for r in row.split():
-        if r[0].isnumeric() and not num:
+        if r[0].isnumeric() and not num and (len(r) <= 3):
             num = r
         else:
             s.append(r)
