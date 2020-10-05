@@ -1,4 +1,4 @@
-from general import value
+from value_func import value
 from common_variables import *
 from gender_relation import gender
 

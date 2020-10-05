@@ -47,3 +47,4 @@ def yargy_parser(text, parser=Parser(WORK_PLACE_PART)):
 
 	return region, district, settlement, street, building, index, place, isnone, deleted_addr_parts
 
+print(yargy_parser("привет"))

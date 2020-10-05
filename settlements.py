@@ -1,4 +1,4 @@
-from general import value
+from value_func import value
 from settlement_name import SETTLEMENT_NAME
 from common_variables import *
 

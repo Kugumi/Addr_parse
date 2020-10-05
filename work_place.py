@@ -1,5 +1,6 @@
 from settlements import Settlement
-from general import value
+#from general import value
+from value_func import value
 from common_variables import *
 from yargy.pipelines import morph_pipeline
 

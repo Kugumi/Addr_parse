@@ -1,7 +1,7 @@
 from settlements import Settlement
 from gender_relation import gender
 from common_variables import *
-from general import value
+from value_func import value
 from addr_name import ADDR_NAME
 
 Street = fact(

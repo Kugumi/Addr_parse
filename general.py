@@ -7,12 +7,12 @@ from common_variables import *
 from natasha.grammars.addr import GOROD, INDEX, FED_OKRUG, RESPUBLIKA, KRAI, AUTO_OKRUG
 
 
-def value(key):
-	@property
-	def field(self):
-		return getattr(self, key)
-
-	return field
+# def value(key):
+# 	@property
+# 	def field(self):
+# 		return getattr(self, key)
+#
+# 	return field
 
 
 AddrPart = fact(

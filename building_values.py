@@ -1,4 +1,5 @@
-from general import ADDR_VALUE, value
+from general import ADDR_VALUE
+from value_func import value
 from common_variables import *
 
 Building = fact(
