@@ -101,6 +101,7 @@ OBLAST = or_(
 
 RAION_WORDS = or_(
 	rule(caseless('р'), '-', in_caseless({'он', 'н'})),
+	rule(caseless('мик'), '-', in_caseless({'он', 'н'})),
 	rule(caseless('мрн')),
 	rule(caseless('мкр')),
 	rule(normalized('район')),
