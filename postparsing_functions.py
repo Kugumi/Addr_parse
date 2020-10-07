@@ -131,7 +131,7 @@ def drop_punct(s):
     return s.replace(".", "").replace(",", "")
 
 
-def settlements(s):
+def settlements_changer(s):
     res = list()
     settlements_dict = {"с": "село", "п": "поселок"}
     for word in s.split():

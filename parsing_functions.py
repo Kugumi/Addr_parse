@@ -31,6 +31,8 @@ def addr_part_extractor(s, names, order_list=(3, 2, 1), types=tuple(), special_n
                 s = re.sub(gram, "", s, flags=re.IGNORECASE, count=1)
                 ret_grams.update(gram.split())
                 first_time = False
+    # print("dyenhb aeyr")
+    # print(type(s))
     return " ".join(ret_grams), s
 
 
