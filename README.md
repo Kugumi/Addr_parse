@@ -1,6 +1,6 @@
 # Addr_parse
 
-**Парсинг адресов с помощью Python-скриптов и yargy-парсера(библиотека natasha)**, изменения в yargy-правилах можно посмотреть [здесь](https://github.com/Kugumi/Addr_parse/blob/master/Doc.md)
+**Парсинг адресов с помощью Python-скриптов и yargy-парсера(библиотека natasha)**, изменения в yargy-правилах можно посмотреть [здесь](https://github.com/Kugumi/Addr_parse/blob/master/Doc.md).
 
 Полный пример простого адреса с ключевыми словами, который будет распарсен:
 
