@@ -46,5 +46,3 @@ def yargy_parser(text, parser=Parser(WORK_PLACE_PART)):
 			isnone = match.fact.value.value
 
 	return region, district, settlement, street, building, index, place, isnone, deleted_addr_parts
-
-print(yargy_parser("Москва, 2-й южнопортовый проезд , 13к2 Южный Порт , 3 . 3 . 13"))

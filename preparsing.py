@@ -26,3 +26,5 @@ complex_list = list(complex_settlements_dict.values())
 settlements = tuple(settlements)
 complex_list = tuple(complex_list)
 settlements_list = settlements + complex_list
+
+towns_list = list(towns_dict.values())

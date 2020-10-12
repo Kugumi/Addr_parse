@@ -12,7 +12,7 @@ SPECIAL_REGIONS = ("краснодарский", "ростовская", "алт
                    "новгородская", "смоленская", "псковская", "ивановская", "волгоградская",
                    "ярославская", "курганская", "липецкая", "курская", "самарская", "тамбовская",
                    "тюменская", "омская", "рязанская", "магаданская", "тульская", "тверская",
-                   "удмуртская", "брянская")
+                   "удмуртская", "брянская", "камчатский")
 
 TOWNS_KEY_WORDS = ("г", "гор", "город")
 SPECIAL_TOWNS = ('октябрьский',)
@@ -51,4 +51,4 @@ BUILDING_KEY_WORDS = ('дом', 'корп', 'место', 'ВСП/ДО', 'кор
 KEY_WORDS = REGIONS_KEY_WORDS + TOWNS_KEY_WORDS + SETTLEMENT_KEY_WORDS +\
             STREETS_KEY_WORDS + BUILDING_KEY_WORDS + RAION_KEY_WORDS
 
-towns, regions, settlements = zip(file_reader())
+towns, regions, settlements = file_reader()

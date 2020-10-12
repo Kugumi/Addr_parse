@@ -6,9 +6,12 @@ from preparsing_functions import generate_ngrams
 def addr_part_extractor(s, names, order_list=(3, 2, 1), types=tuple(), special_names=tuple()):
     ret_grams = set()
     first_time = True
+    # i = 0
     for n in order_list:
         grams_list = generate_ngrams(s, n)
         for gram in grams_list:
+            # i += 1
+            # print(str(n) + " номер " + str(i) +" "+ gram)
             name = ""
             nam = False
             typ = False
@@ -31,8 +34,6 @@ def addr_part_extractor(s, names, order_list=(3, 2, 1), types=tuple(), special_n
                 s = re.sub(gram, "", s, flags=re.IGNORECASE, count=1)
                 ret_grams.update(gram.split())
                 first_time = False
-    # print("dyenhb aeyr")
-    # print(type(s))
     return " ".join(ret_grams), s
 
 
