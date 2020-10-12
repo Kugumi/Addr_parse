@@ -19,6 +19,7 @@ def complex_changer(s, change_dict):
     for i in range(3, 0, -1):
         grams_list = generate_ngrams(s, i)
         for gram in grams_list:
+            # print(gram)
             if change_dict.get(gram):
                 return re.sub(gram, change_dict.get(gram), s, flags=re.IGNORECASE)
     return s

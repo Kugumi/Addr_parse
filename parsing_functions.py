@@ -23,13 +23,17 @@ def addr_part_extractor(s, names, order_list=(3, 2, 1), types=tuple(), special_n
             for word in gram.split():
                 if word in special_names and n == 1:
                     return " ".join(ret_grams), s
-                if word in names:
+                if word in names or word in special_names:
                     nam = True
                     name = word
                 if word in types:
                     typ = True
                 if word == ".":
                     punct = True
+            # print(nam)
+            # print(typ)
+            # print(punct)
+            # print("--------")
             if nam & typ & punct & (first_time or name in ret_grams):
                 s = re.sub(gram, "", s, flags=re.IGNORECASE, count=1)
                 ret_grams.update(gram.split())
