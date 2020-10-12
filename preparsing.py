@@ -12,8 +12,9 @@ for elem in list(COMPLEX_SETTLEMENTS_TO_REMOVE):
     if elem in complex_settlements:
         complex_settlements.remove(elem)
 
+towns, complex_towns = extract_complex_names(towns)
+towns_dict = locality_dict(complex_towns)
 
-towns_dict = locality_dict(towns)
 complex_settlements_dict = locality_dict(complex_settlements)
 complex_settlements_dict.update({"автономный округ": "автономный_округ",
                                  "автономная область": "автономная_область",
@@ -27,4 +28,4 @@ settlements = tuple(settlements)
 complex_list = tuple(complex_list)
 settlements_list = settlements + complex_list
 
-towns_list = list(towns_dict.values())
+towns_list = list(towns_dict.values()) + towns

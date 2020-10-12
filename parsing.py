@@ -14,6 +14,7 @@ def address_parsing(address):
     address = complex_changer(address, change_dict=complex_settlements_dict)
     country, ost = addr_part_extractor(s=address, order_list=(1,), names=COUNTRY_KEY_WORDS)
     # print("ost1: " + ost)
+    # print(towns_list)
     town, ost = addr_part_extractor(s=ost, names=towns_list, types=TOWNS_KEY_WORDS, special_names=SPECIAL_TOWNS)
     # print("ost2: " + ost)
     region, ost = addr_part_extractor(s=ost, names=regions, types=REGIONS_KEY_WORDS, special_names=SPECIAL_REGIONS)
