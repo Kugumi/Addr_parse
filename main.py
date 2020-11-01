@@ -27,8 +27,15 @@ if __name__ == '__main__':
 	# df['country'], df['region'], df['town'], df['settlement'], df['district'], df['street'], df['building'], df['place'], df['index'], df['result_string'] = zip(*df['Column1'].apply(parsing))
 	# df.to_excel(r"/Users/a18573916/Desktop/addr_parse/Addr_parse/results/metric1000.xlsx")
 	#
-    s = "воронежская область воробьевский район с мужичье ленина 170"
-    country, region, town, settlement, district, street, building, place, index, result_string = address_parsing(s)
-    printer(country, region, town, settlement, district, street, building, place, index)
-    print(result_string)
+#    s = "воронежская область воробьевский район с мужичье ленина 170"
+#    country, region, town, settlement, district, street, building, place, index, result_string = address_parsing(s)
+#    printer(country, region, town, settlement, district, street, building, place, index)
+#    print(result_string)
+	print("Путь до файла:")
+	filename = input()
+	with open("res.csv", "w") as result_file, open(filename, 'r') as f:
+		result_file.write("country,region,town,settlement,district,street,building,place,index\n")
+		for line in f:
+			country, region, town, settlement, district, street, building, place, index, result_string = address_parsing(line)
+			result_file.write(country + "," + region + "," + town + "," + settlement + "," + district + "," + street + "," + building + "," + place + "," + index + "\n")
 
